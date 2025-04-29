@@ -15,14 +15,14 @@ def selection_gloutonne(chemin_fichier, budget=500):
 
     # 2) Calcul du profit en euros et du ratio profit/prix
     df['profit_eur'] = df['price'] * df['profit'] / 100.0
-    df['ratio']      = df['profit_eur'] / df['price']
+    df['ratio'] = df['profit_eur'] / df['price']
 
     # 3) Tri des actions par ratio décroissant
     df_trie = df.sort_values(by='ratio', ascending=False).reset_index(drop=True)
 
     # 4) Parcours glouton
-    selection   = []
-    cout_total  = 0.0
+    selection = []
+    cout_total = 0.0
     for _, action in df_trie.iterrows():
         if cout_total + action['price'] <= budget:
             selection.append(action)
