@@ -39,7 +39,7 @@ l'optimalité globale.
 
     Lancez la console, placez-vous dans le dossier de votre choix et clonez le dépôt :
     ```
-    • git clone https://github.com/mouquettom/OpenClassrooms_P6_JustStreamIt.git
+    • git clone https://github.com/mouquettom/OC_P7_AlgoInvest-Trade.git
     ```
 
 3. **Installer les packages :**
